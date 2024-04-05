@@ -1,0 +1,4 @@
+import math
+r=float(input('enter radius:'))
+print('area of circle:',math.pi*r**2)
+print('perimeter of circle:',2*math.pi*r)
