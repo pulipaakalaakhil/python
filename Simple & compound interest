@@ -1,0 +1,5 @@
+p=float(input('enter money borrowed:'))
+t=float(input('enter time taken in days:'))
+r=float(input('enter interest rate per day:'))
+print('simple interest:',(p*t*r)/100)
+print('compound interest:',p*((1+r)**t))
