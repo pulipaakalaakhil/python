@@ -1,0 +1,6 @@
+word1=input('enter 1st string:')
+word2=input('enter 2nd string:')
+if(sorted(word1)==sorted(word2)):
+    print('two strings are anagram')
+else:
+    print('two strings are not anagram')
