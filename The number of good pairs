@@ -1,0 +1,15 @@
+def pairs(x):
+    count = 0
+    pairs=[]
+    n=len(x)
+    for i in range(n):
+        for j in range(i+1, n):
+            if x[i] == x[j]:
+                count += 1
+                pairs.append((i,j))
+    return count,pairs
+
+x = [1, 1, 1, 1]
+count, pairs = pairs(x)
+print(f"Number of good pairs: {count}")
+print("Good pairs:", pairs)
