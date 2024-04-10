@@ -1,0 +1,12 @@
+def generate_combinations(arr, r, start=0, combination=[]):
+    if len(combination) == r:
+        print(combination)
+        return
+    
+    for i in range(start, len(arr)):
+        combination.append(arr[i])
+        generate_combinations(arr, r, i + 1, combination)
+        combination.pop()
+
+elements = [1, 2, 3]
+generate_combinations(elements, 2)
