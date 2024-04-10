@@ -1,0 +1,4 @@
+x=(input('enter a string:'))
+a=x[::-1]
+print('original string:',x)
+print('mirror:',a)
